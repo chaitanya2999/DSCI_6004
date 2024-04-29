@@ -1,6 +1,6 @@
-LinkBERT: A Knowledgeable Language Model Pretrained with Document Links
+#LinkBERT: A Knowledgeable Language Model Pretrained with Document Links
 
-Overview
+#Overview
 
 LinkBERT is a new pretrained language model (improvement of BERT) that captures document links such as hyperlinks and citation links to include knowledge that spans across multiple documents. Specifically, it was pretrained by feeding linked documents into the same language model context, besides using a single document as in BERT.
 
@@ -22,7 +22,7 @@ gzip -d $OUTPUT/HotpotQA.jsonl.gz
 
 ### After this, Run [preprocessNLPHotpotQA.py](preprocessNLPHotpotQA.py) to preprocess the raw_data.
 
-Set up environment and data
+#Set up environment and data
 
 Environment
 
