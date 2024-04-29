@@ -4,13 +4,6 @@ Overview
 
 LinkBERT is a new pretrained language model (improvement of BERT) that captures document links such as hyperlinks and citation links to include knowledge that spans across multiple documents. Specifically, it was pretrained by feeding linked documents into the same language model context, besides using a single document as in BERT.
 
-LinkBERT can be used as a drop-in replacement for BERT. It achieves better performance for general language understanding tasks (e.g. text classification), and is also particularly effective for knowledge-intensive tasks (e.g. question answering) and cross-document tasks (e.g. reading comprehension, document retrieval).
-
-
-
-
-
-
 
 # shell comands to download raw data
 
@@ -27,8 +20,18 @@ wget https://s3.us-east-2.amazonaws.com/mrqa/release/v2/dev/HotpotQA.jsonl.gz -O
 gzip -d $OUTPUT/HotpotQA.jsonl.gz
 
 
-
 ### After this, Run [preprocessNLPHotpotQA.py](preprocessNLPHotpotQA.py) to preprocess the raw_data.
+
+Set up environment and data
+
+Environment
+
+Run the following commands to create a conda environment:
+
+conda create -n linkbert python=3.8
+source activate linkbert
+pip install torch==1.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+pip install transformers==4.9.1 datasets==1.11.0 fairscale==0.4.0 wandb sklearn seqeval
 
 ### Finally, run the following commands to run the model
 
