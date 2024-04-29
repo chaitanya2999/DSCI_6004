@@ -1,3 +1,17 @@
+LinkBERT: A Knowledgeable Language Model Pretrained with Document Links
+
+Overview
+
+LinkBERT is a new pretrained language model (improvement of BERT) that captures document links such as hyperlinks and citation links to include knowledge that spans across multiple documents. Specifically, it was pretrained by feeding linked documents into the same language model context, besides using a single document as in BERT.
+
+LinkBERT can be used as a drop-in replacement for BERT. It achieves better performance for general language understanding tasks (e.g. text classification), and is also particularly effective for knowledge-intensive tasks (e.g. question answering) and cross-document tasks (e.g. reading comprehension, document retrieval).
+
+
+
+
+
+
+
 # shell comands to download raw data
 
 
