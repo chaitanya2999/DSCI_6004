@@ -5,7 +5,7 @@
 LinkBERT is a new pretrained language model (improvement of BERT) that captures document links such as hyperlinks and citation links to include knowledge that spans across multiple documents. Specifically, it was pretrained by feeding linked documents into the same language model context, besides using a single document as in BERT.
 
 
-# shell comands to download raw data
+# Shell comands to download raw data
 
 
 mkdir -p raw_data
