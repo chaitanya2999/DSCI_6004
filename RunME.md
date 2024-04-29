@@ -1,4 +1,4 @@
-# LinkBERT: A Knowledgeable Language Model Pretrained with Document Links
+# LinkBERT: Fine Tuning Pre-trained Language Model with Document Links
 
 # Overview
 
